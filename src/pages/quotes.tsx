@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import Layout from "../components/Layout";
 import { getRandomQuote, Quote } from "@steffenz/random-inspirational-quote";
 import styled from 'styled-components';
+import { withPrefix } from 'gatsby';
 
 const Page = styled.section`
-  background: url('./gfx/bg/bg2.jpg') repeat-y;
+  background: url(${withPrefix('/gfx/bg/bg2.jpg')}) repeat-y;
   background-size: cover;
   height:100%;
   padding-top:45px;

@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: `/github-demo-page`,
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
     title: "github-demo-page",
