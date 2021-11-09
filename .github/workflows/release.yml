@@ -1,0 +1,29 @@
+name: Publish page on release
+on:
+  release:
+    types:
+      - published
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    env:
+      NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          registry-url: 'https://npm.pkg.github.com'
+      - run: git symbolic-ref HEAD refs/heads/gh-pages && rm .git/index 
+      - run: npm ci
+      - run: npm run build
+      - run: "find -maxdepth 1 ! -name public ! -name .git -exec rm -rv {} \\;"
+      - run: "mv public/* . && rm -rf public"
+      - run: ls -la
+      - run: |
+          git add .
+          git config --global user.email "releasebot@dev.com"
+          git config --global user.name "Release Bot"
+          git commit -m "publish new version"
+          git push origin gh-pages --force
