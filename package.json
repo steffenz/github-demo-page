@@ -17,15 +17,21 @@
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
+    "@steffenz/random-inspirational-quote": "0.0.4",
     "babel-plugin-styled-components": "^1.13.3",
     "gatsby": "^4.1.0",
     "gatsby-plugin-mdx": "^3.1.0",
     "gatsby-plugin-react-helmet": "^5.1.0",
     "gatsby-plugin-styled-components": "^5.1.0",
     "gatsby-source-filesystem": "^4.1.0",
+    "install": "^0.13.0",
+    "npm": "^8.1.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
     "styled-components": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/styled-components": "^5.1.15"
   }
 }
