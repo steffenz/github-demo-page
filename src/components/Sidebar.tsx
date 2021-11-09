@@ -7,7 +7,7 @@ interface Props {
 }
 
 const StyledWrapper = styled.nav`
-    background: url('/gfx/bg/bg0.jpg') repeat-y;
+    background: url('./gfx/bg/bg0.jpg') repeat-y;
     width:20%;
     height:100vh;
     border-right:1px solid;
@@ -44,7 +44,7 @@ export default function Sidebar({ children }: Props): React.ReactElement {
     return(
         <StyledWrapper>
 
-            <img id="menuHeaderImg" src="/gfx/headers/linker.gif"/>
+            <img id="menuHeaderImg" src="./gfx/headers/linker.gif"/>
 
             <MainMenu>
                 <li>
@@ -64,20 +64,20 @@ export default function Sidebar({ children }: Props): React.ReactElement {
                 </li>
             </MainMenu>
 
-            <img id="chainBorder" src="/gfx/gifs/chainborder.gif"/>
+            <img id="chainBorder" src="./gfx/gifs/chainborder.gif"/>
 <br/>
             <p style={{ color: 'yellow'}}>Y U NO DOWNLOAD</p><br/>
-            <img onClick={alertShit} src="/gfx/badges/winamp-miniban.gif"/>
-            <img onClick={alertShit} src="/gfx/badges/notepad.gif"/>
-            <img onClick={alertShit} src="/gfx/badges/2cows.gif"/>
-            <img onClick={alertShit} src="/gfx/badges/dukenow.gif"/>
-            <img onClick={alertShit} src="/gfx/badges/winrar.gif"/>
-            <img onClick={alertShit} src="/gfx/badges/ie_logo.gif"/>
-            <img onClick={alertShit} src="/gfx/badges/netscape.gif"/>
+            <img onClick={alertShit} src="./gfx/badges/winamp-miniban.gif"/>
+            <img onClick={alertShit} src="./gfx/badges/notepad.gif"/>
+            <img onClick={alertShit} src="./gfx/badges/2cows.gif"/>
+            <img onClick={alertShit} src="./gfx/badges/dukenow.gif"/>
+            <img onClick={alertShit} src="./gfx/badges/winrar.gif"/>
+            <img onClick={alertShit} src="./gfx/badges/ie_logo.gif"/>
+            <img onClick={alertShit} src="./gfx/badges/netscape.gif"/>
             
             <br/><br/>
             
-            <img onClick={ () => alert('₍ᐢ.  ̫.ᐢ₎')}src="/gfx/gifs/pika.gif"/>
+            <img onClick={ () => alert('₍ᐢ.  ̫.ᐢ₎')}src="./gfx/gifs/pika.gif"/>
 
         </StyledWrapper>
     )

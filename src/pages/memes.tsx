@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 import styled from 'styled-components';
 
 const Page = styled.section`
-  background: url('/gfx/bg/bg3.jpg') repeat-y;
+  background: url('./gfx/bg/bg3.jpg') repeat-y;
   background-size: cover;
   height:100%;
 `
