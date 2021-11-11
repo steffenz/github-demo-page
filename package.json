@@ -18,7 +18,7 @@
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
-    "@steffenz/random-inspirational-quote": "0.0.4",
+    "@steffenz/random-inspirational-quote": "0.0.5",
     "babel-plugin-styled-components": "^1.13.3",
     "gatsby": "^4.1.0",
     "gatsby-plugin-mdx": "^3.1.0",
